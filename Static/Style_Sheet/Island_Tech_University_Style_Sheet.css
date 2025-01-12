@@ -461,6 +461,14 @@ body{
     font-weight: 600 !important;
 }
 
+@media screen and (max-width: 1199px) {
+    .nav-link{
+        border-left: white solid 8px !important;
+        padding-left: 25px !important;
+
+    }
+
+}
 
 
 

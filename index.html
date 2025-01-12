@@ -8,40 +8,37 @@
     <link href="Static/Style_Sheet/Island_Tech_University_Style_Sheet.css" rel="stylesheet">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg  w-100 p-0  opacity-90 " style="position: fixed; z-index: 2; ">
-    <div class="container-fluid p-0 pt-1 ">
-        <div class="nav_menu collapse navbar-collapse d-flex flex-row justify-content-between" id="navbarNavDropdown">
-            <a class="navbar-brand ps-4 d-flex flex-row" href="#">
-                <img class=" pe-3" id="logo_image" src="Static/Images/logo-white.png" alt="Island Tech University Logo colored white" style="height:auto; width:60px"/>
-                <h2 class="pt-1 nav_element"> ISLAND TECH UNIVERSITY</h2>
-            </a>
-
-            <ul class="navbar-nav d-flex flex-row pe-4">
+<nav class="navbar navbar-expand-xl w-100 p-0  opacity-90 " style="position: fixed; z-index: 2; ">
+    <div class="container-fluid  p-0 pt-1">
+        <a class="navbar-brand ps-4 d-flex flex-row" href="#">
+            <img class=" pe-3" id="logo_image" src="./Static/Images/logo-white.png" style="height:auto; width:60px"/>
+            <h2 class="pt-1 nav_element"> ISLAND TECH UNIVERSITY</h2>
+        </a>
+        <button class="navbar-toggler bg-white me-4" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="nav_menu  collapse navbar-collapse justify-content-end ps-xl-0 pb-xl-0 ps-4 pb-3  " id="navbarNav">
+            <ul class="navbar-nav pe-4">
                 <li class="nav-item pt-2">
                     <a id="nav_element_1" class="nav-link  " href="./Home.html">Home</a>
                 </li>
-
                 <li class="nav-item pt-2">
-                    <a id="nav_element_2" class=" nav-link " href="About_Us.html">About Us</a>
+                    <a id="nav_element_2" class=" nav-link " href="./About_Us.html">About Us</a>
                 </li>
 
                 <li class="nav-item pt-2">
-                    <a id="nav_element_3" class="nav-link " href="Academics.html" >
-                        Academic
-                    </a>
-
+                    <a id="nav_element_3" class="nav-link " href="./Academics.html" >Academic</a>
                 </li>
 
                 <li class="nav-item pt-2">
-                    <a id="nav_element_4" class="nav-link" href="Campus_Life.html">Campus Life</a>
+                    <a id="nav_element_4" class="nav-link" href="./Campus_Life.html">Campus Life</a>
                 </li>
                 <li class="nav-item pt-2">
-                    <a id="nav_element_5" class="nav-link" href="News_Letter.html">News Letter</a>
+                    <a id="nav_element_5" class="nav-link" href="./News_Letter.html">News Letter</a>
                 </li>
                 <li class="nav-item pt-2">
-                    <a id="nav_element_6" class="nav-link nav_element_6" href="Contact_Us.html">Contact Us</a>
+                    <a id="nav_element_6" class="nav-link nav_element_6" href="./Contact_Us.html">Contact Us</a>
                 </li>
-
             </ul>
         </div>
     </div>
@@ -58,16 +55,16 @@
 
     <div class="home_section_1 container_fluid p-4 mt-3 overflow-hidden">
         <div class="row ">
-            <div class="col-7 d-flex flex-row ">
-                <div><img class="me-5 ms-5" src="Static/Images/logo-black.png" alt="Island Tech University Logo colored black" style="height:110px; width:100px"/></div>
-                <div>
+            <div class="col-7 col-lg-6 d-flex flex-row ">
+                <div><img class="me-5 ms-5 d-none d-xl-block " src="Static/Images/logo-black.png" alt="Island Tech University Logo colored black" style="height:110px; width:100px"/></div>
+                <div class="text-xl-start text-center">
                     <h2>WHERE INNOVATION MEETS PARADISE</h2>
                     <p class="pe-3 pt-5">At Island Tech University, innovation thrives in the heart of paradise. Nestled amidst breathtaking coastal landscapes, ITU offers a unique blend of cutting-edge technology and serene island beauty, creating an environment where creativity knows no bounds. Our state-of-the-art facilities, world-class faculty, and vibrant student community are united by a shared passion for pushing the boundaries of knowledge and discovery. From pioneering advancements in artificial intelligence to driving sustainable solutions, ITU is a hub for visionary thinkers who draw inspiration from their surroundings to shape a better future. At ITU, we don’t just study innovation — we live it, every day.</p>
                     <button class="learn_more_button border border-0 rounded-4 px-4 py-2 mt-5">LEARN MORE</button>
                 </div>
 
             </div>
-            <div class="col-5 ">
+            <div class="col-5 col-lg-6 ">
                 <div class="row" style="height:20rem; ">
                     <div class="col-4 p-2 border border-5 border-white" style="background-image: url(Static/Images/two_male_graduates_2.png);  background-size: cover;background-repeat: no-repeat!important; height: 100%"></div>
                     <div class="col-8 p-2 border border-5 border-white" style="background-image: url(Static/Images/island_tech_university_band.png);  background-size: cover;background-repeat: no-repeat!important; height: 100%"></div>
