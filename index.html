@@ -2,23 +2,25 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Welcome to Island Tech University- Innovating education with diverse programs, top research, and vibrant campus life. Empower your future at ITU!">
     <title>Home-Island Tech University</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link href="Static/Style_Sheet/Island_Tech_University_Style_Sheet.css" rel="stylesheet">
+    <link href="./Static/Style_Sheet/Island_Tech_University_Style_Sheet.css" rel="stylesheet">
 </head>
 <body>
+
 <nav class="navbar navbar-expand-xl w-100 p-0  opacity-90 " style="position: fixed; z-index: 2; ">
     <div class="container-fluid  p-0 pt-1">
         <a class="navbar-brand ps-4 d-flex flex-row" href="#">
             <img class=" pe-3" id="logo_image" src="./Static/Images/logo-white.png" style="height:auto; width:60px"/>
             <h2 class="pt-1 nav_element"> ISLAND TECH UNIVERSITY</h2>
         </a>
-        <button class="navbar-toggler bg-white me-4" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+
+        <button class="navbar-toggler bg-white me-4" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="nav_menu  collapse navbar-collapse justify-content-end ps-xl-0 pb-xl-0 ps-4 pb-3  " id="navbarNav">
-            <ul class="navbar-nav pe-4">
+
+        <div class="nav_menu  collapse navbar-collapse justify-content-end ps-xl-0 pb-xl-0 ps-4 pb-3  " id="navbarNavDropdown">
+            <ul class="navbar-nav pe-4 align-items-xl-center">
                 <li class="nav-item pt-2">
                     <a id="nav_element_1" class="nav-link  " href="./Home.html">Home</a>
                 </li>
@@ -26,353 +28,420 @@
                     <a id="nav_element_2" class=" nav-link " href="./About_Us.html">About Us</a>
                 </li>
 
-                <li class="nav-item pt-2">
-                    <a id="nav_element_3" class="nav-link " href="./Academics.html" >Academic</a>
+                <li class="nav-item pt-2 dropdown">
+                    <a id="nav_element_3" class="nav-link " href="./Academics.html" role="button"  aria-expanded="false">
+                        Academic
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Student Portal</a></li>
+                        <li><a class="dropdown-item" href="#">Under Graduate</a></li>
+                        <li><a class="dropdown-item" href="#">Graduate</a></li>
+                        <li><a class="dropdown-item" href="#">Certification Courses</a></li>
+                    </ul>
                 </li>
 
-                <li class="nav-item pt-2">
-                    <a id="nav_element_4" class="nav-link" href="./Campus_Life.html">Campus Life</a>
+                <li class="nav-item pt-2 dropdown">
+                    <a id="nav_element_4" class="nav-link " href="./Campus_Life.html" role="button"  aria-expanded="false">
+                        Campus Life
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Clubs & Societies</a></li>
+                        <li><a class="dropdown-item" href="#">Student Housing</a></li>
+                    </ul>
                 </li>
+
+
                 <li class="nav-item pt-2">
                     <a id="nav_element_5" class="nav-link" href="./News_Letter.html">News Letter</a>
                 </li>
+
                 <li class="nav-item pt-2">
-                    <a id="nav_element_6" class="nav-link nav_element_6" href="./Contact_Us.html">Contact Us</a>
+                    <a id="nav_element_6" class="nav-link " href="./Contact_Us.html">Contact Us</a>
                 </li>
+
+                <li class="nav-item pt-2">
+                    <a id="nav_element_7" class="nav-link " href="./Contact_Us.html">
+                        <button class="donate_button rounded-1" type="button" >Donate</button>
+                    </a>
+                </li>
+
             </ul>
         </div>
     </div>
 </nav>
 
-    <div class="banner_container shadow-lg container-fluid banner_image p-0 overflow-hidden" style="height: 550px; ">
+<div class="banner_container shadow-lg container-fluid banner_image p-0 overflow-hidden" style="height: 550px; ">
 
-        <div class="bg-white d-flex justify-content-center align-items-center" style="background-image: url(Static/Images/Island_Tech_University_Aerial.png); height:100%; width:100%; background-size: cover;background-repeat: no-repeat!important; color:white; " >
-            <h1 style="font-size:clamp(4rem, 5%, 8rem)">WELCOME</h1>
-        </div>
-
-
+    <div class="bg-white d-flex justify-content-center align-items-center" style="background-image: url(./Static/Images/Island_Tech_University_Aerial.png); height:100%; width:100%; background-size: cover;background-repeat: no-repeat!important; color:white; " >
+        <h1 style="font-size:clamp(4rem, 5%, 8rem)">WELCOME</h1>
     </div>
 
-    <div class="home_section_1 container_fluid p-4 mt-3 overflow-hidden">
-        <div class="row ">
-            <div class="col-7 col-lg-6 d-flex flex-row ">
-                <div><img class="me-5 ms-5 d-none d-xl-block " src="Static/Images/logo-black.png" alt="Island Tech University Logo colored black" style="height:110px; width:100px"/></div>
-                <div class="text-xl-start text-center">
-                    <h2>WHERE INNOVATION MEETS PARADISE</h2>
-                    <p class="pe-3 pt-5">At Island Tech University, innovation thrives in the heart of paradise. Nestled amidst breathtaking coastal landscapes, ITU offers a unique blend of cutting-edge technology and serene island beauty, creating an environment where creativity knows no bounds. Our state-of-the-art facilities, world-class faculty, and vibrant student community are united by a shared passion for pushing the boundaries of knowledge and discovery. From pioneering advancements in artificial intelligence to driving sustainable solutions, ITU is a hub for visionary thinkers who draw inspiration from their surroundings to shape a better future. At ITU, we don’t just study innovation — we live it, every day.</p>
-                    <button class="learn_more_button border border-0 rounded-4 px-4 py-2 mt-5">LEARN MORE</button>
-                </div>
 
+</div>
+
+<div class="home_section_1 container_fluid p-4 mt-3 overflow-hidden">
+    <div class="row ">
+        <div class="col-7 col-lg-6 d-flex flex-row ">
+            <div><img class="me-5 ms-5 d-none d-xl-block " src="Static/Images/logo-black.png" alt="Island Tech University Logo colored black" style="height:110px; width:100px"/></div>
+            <div class="text-xl-start text-center">
+                <h2>WHERE INNOVATION MEETS PARADISE</h2>
+                <p class="pe-3 pt-5">At Island Tech University, innovation thrives in the heart of paradise. Nestled amidst breathtaking coastal landscapes, ITU offers a unique blend of cutting-edge technology and serene island beauty, creating an environment where creativity knows no bounds. Our state-of-the-art facilities, world-class faculty, and vibrant student community are united by a shared passion for pushing the boundaries of knowledge and discovery. From pioneering advancements in artificial intelligence to driving sustainable solutions, ITU is a hub for visionary thinkers who draw inspiration from their surroundings to shape a better future. At ITU, we don’t just study innovation — we live it, every day.</p>
+                <button class="learn_more_button border border-0 rounded-4 px-4 py-2 mt-5">LEARN MORE</button>
             </div>
-            <div class="col-5 col-lg-6 ">
-                <div class="row" style="height:20rem; ">
-                    <div class="col-4 p-2 border border-5 border-white" style="background-image: url(Static/Images/two_male_graduates_2.png);  background-size: cover;background-repeat: no-repeat!important; height: 100%"></div>
-                    <div class="col-8 p-2 border border-5 border-white" style="background-image: url(Static/Images/island_tech_university_band.png);  background-size: cover;background-repeat: no-repeat!important; height: 100%"></div>
-                    <div class="col-8 p-2 border border-5 border-white" style="background-image: url(Static/Images/volley_ball_uit.png);  background-size: cover;background-repeat: no-repeat!important; height: 100%"></div>
-                    <div class="col-4 p-2 border border-5 border-white" style="background-image: url(Static/Images/rowing.png);  background-size: cover;background-repeat: no-repeat!important; height: 100%"></div>
-                </div>
-            </div>
+
         </div>
-        <div class="row">
-            <div class="col-6 d-flex flex-row ">
-                <div> </div>
-
-            </div>
-            <div class="col-6 ">
-                <div class="row" style="height:15rem; overflow: hidden !important;">
-
-                </div>
+        <div class="col-5 col-lg-6 ">
+            <div class="row" style="height:20rem; ">
+                <div class="col-4 p-2 border border-5 border-white" style="background-image: url(Static/Images/two_male_graduates_2.png);  background-size: cover;background-repeat: no-repeat!important; height: 100%"></div>
+                <div class="col-8 p-2 border border-5 border-white" style="background-image: url(Static/Images/island_tech_university_band.png);  background-size: cover;background-repeat: no-repeat!important; height: 100%"></div>
+                <div class="col-8 p-2 border border-5 border-white" style="background-image: url(Static/Images/volley_ball_uit.png);  background-size: cover;background-repeat: no-repeat!important; height: 100%"></div>
+                <div class="col-4 p-2 border border-5 border-white" style="background-image: url(Static/Images/rowing.png);  background-size: cover;background-repeat: no-repeat!important; height: 100%"></div>
             </div>
         </div>
     </div>
-
-    <div class="home_section_2 container_fluid shadow-lg py-5 overflow-hidden">
-        <div class="row justify-content-center">
-            <div class="col-6 py-3">
-                <h3>Find your program</h3>
-                <p class="pt-3"> Search amoung our 100+ programs across our 3 faculties.</p>
-            </div>
-        </div>
-        <div class="row justify-content-center">
-            <div class="col-6 ">
-                <div class="d-flex flex-row align-items-center mb-5">
-                    <div class="form-check pe-4">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                        <label class="form-check-label" for="flexRadioDefault1">
-                            Undergraduate Program
-                        </label>
-                    </div>
-                    <div class="form-check pe-4 ">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-                        <label class="form-check-label" for="flexRadioDefault2">
-                            Graduate Program
-                        </label>
-                    </div>
-                    <div class="form-check pe-4">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3" checked>
-                        <label class="form-check-label" for="flexRadioDefault3">
-                            Short Courses
-                        </label>
-                    </div>
-                    <div class="form-check pe-4 ">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault4" checked>
-                        <label class="form-check-label" for="flexRadioDefault4">
-                            All
-                        </label>
-                    </div>
-
-
-                </div>
-
-                <form class="d-flex flex-column" >
-                    <input class="form-control me-2 rounded-1" type="search" placeholder="Search for your program of choice." aria-label="Search">
-
-                </form>
-                <button class="learn_more_button border border-0 rounded-3 px-3 py-1 mt-4" type="submit">Find Course</button>
-
-
-            </div>
+    <div class="row">
+        <div class="col-6 d-flex flex-row ">
+            <div> </div>
 
         </div>
-    </div>
-
-    <div class="home_section_3 container_fluid py-5 overflow-hidden">
-        <div class="row justify-content-center">
-            <div class="news_card card border border-0 shadow-large rounded-0 mt-5 " style="max-width: 30rem; min-width: 18rem; ">
-
-                <img src="Static/Images/grad_purifier_team.jpg" class="card-img-top rounded-0" alt="Three Island Tech University Grad Students working on Innovative Water Purifier Project">
-
-                <div class="card-body  text-start p-0 px-4 py-3">
-                    <h3 class="card-title py-3 ">Student Highlight:</h3>
-                    <h4> Innovations in Water Purification</h4>
-                    <h6>January 3, 2025</h6>
-                    <p class="card-text p-0">Graduate students from the Civil and Environmental Engineering Department have developed a cost-effective water purification system using locally sourced materials. Their prototype is currently being tested in underserved regions and has the potential to improve access to clean water globally.</p>
-                    <a class="pt-1" href="#!"> Read more >></a>
-                </div>
-            </div>
-
-            <div class="news_card card border border-0 shadow-large rounded-0 mt-5 " style="max-width: 30rem; min-width: 18rem; ">
-
-                <img src="Static/Images/alumini_feature_image.png" class="card-img-top rounded-0" alt="Collage Image of three Island Tech University Alumni">
-
-                <div class="card-body  text-start p-0 px-4 py-3">
-                    <h3 class="card-title py-3 ">Alumni Achievements:</h3>
-                    <h4>Building a Better Tomorrow</h4>
-                    <h6>January 5, 2025</h6>
-                    <p class="card-text p-0">Our alumni continue to leave a lasting impact on the world. From designing earthquake-resistant housing in Southeast Asia to leading urban renewal projects in major cities, ITU graduates are using their skills to address global challenges. This article profiles three outstanding alumni and their groundbreaking projects.</p>
-                    <a class="pt-1" href="#!"> Read more >></a>
-                </div>
-            </div>
-
-            <div class="news_card card border border-0 shadow-large rounded-0 mt-5 " style="max-width: 30rem; min-width: 18rem; ">
-
-                <img src="Static/Images/faculty_focus.png" class="card-img-top rounded-0" alt="Portrait Photo of Dr. Maria Tan in safety vest">
-
-                <div class="card-body  text-start p-0 px-4 py-3">
-                    <h3 class="card-title py-3 ">Faculty Spotlight: </h3>
-                    <h4>Dr. Maria Tan’s Work on Renewable Energy</h4>
-                    <h6>December 18, 2024</h6>
-                    <p class="card-text p-0">Dr. Maria Tan, a professor in our Electrical Engineering Department, has been making waves with her research on advanced solar panel technologies. Her recent paper, published in Renewable Energy Journal, explores innovative methods to improve efficiency and durability in extreme climates. Dr. Tan’s work exemplifies our commitment to sustainability and innovation.</p>
-                    <a class="pt-1" href="#!"> Read more >></a>
-                </div>
-            </div>
-
-        </div>
-    </div>
-
-    <div class="home_section_4 container_fluid shadow-lg py-5 overflow-hidden">
-        <div class="row justify-content-center">
-            <div class="col-7 p-5 pt-0">
-                <h3 class="mb-5"> PRESIDENTIAL GREETINGS</h3>
-                <p>
-                    Welcome to a vibrant hub of innovation, exploration, and growth. At Island Tech University, we are committed to empowering students, faculty, and staff to achieve their highest potential while fostering a culture of collaboration, inclusion, and sustainability.
-                </p>
-                <p>
-                    Our institution stands at the forefront of cutting-edge research and transformative education. With a focus on global challenges and local impact, we prepare our students to be leaders and changemakers in an ever-evolving world.
-                </p>
-                <p>
-                    Whether you are here to pursue academic excellence, engage in groundbreaking research, or contribute to our diverse and dynamic community, know that you are an integral part of a legacy dedicated to shaping the future.
-                </p>
-                <p>
-                    Thank you for being a part of Island Tech University, where opportunity meets possibility.
-                </p>
-                <p>
-                    Warm regards,<br>
-                    Dr. Kevin Jackson <br>
-                    President, Island Tech University
-                </p>
-            </div>
-            <div class="col-5 py-3 text-start ">
-                <img src="Static/Images/president_photo.png" alt="Portrait Photo of Dr. Kevin Jackson Principal of Island Tech University" style="width:40rem"/>
-            </div>
-        </div>
-    </div>
-
-    <div class="home_section_5 container_fluid p-0 mb-5 overflow-hidden text-center">
-        <div class="row text-center justify-content-center">
-            <div class="col-8 mb-4">
-                <h2 class="my-4">CAMPUS ENERGY</h2>
-                <img src="Static/Images/logo-black.png" alt="Island Tech University colored black" class="py-3" style="height:auto; width:12rem"/>
-                <p>At Island Tech University, we believe that learning goes beyond the classroom. Our vibrant campus is home to a diverse range of clubs and activities designed to foster creativity, leadership, and community spirit. Whether you're passionate about sports, arts, technology, or social causes, there's a place for everyone to thrive.</p>
-                <p>Our student clubs, such as the Engineering Club, Debate Society, Music Club, and Netball and Soccer Clubs, provide opportunities to connect with like-minded peers while developing valuable skills. From building innovative projects in state-of-the-art labs to engaging in spirited debates or performing on stage, students are encouraged to explore their interests and talents.</p>
-            </div>
-
-        </div>
-        <div class="row text-center" >
-            <div class="col-12 text-center mb-5 ">
-
-                <button class="learn_more_button border border-0 rounded-3 px-3 py-1">Discover More</button>
-            </div>
-        </div>
-        <div class="row justify-content-center g-0  " style="height:15rem">
-           <div class="col-2">
-               <img src="Static/Images/netball_club.png" alt="Island Tech University Netball Team on Netball Court" style="width:100%"/>
-           </div>
-            <div class="col-2">
-                <img src="Static/Images/music_club.png" alt="Island Tech University Music Club on School Lawn Practicing" style="width:100%"/>
-            </div>
-            <div class="col-2">
-                <img src="Static/Images/debate_society.png" alt="Two Students from Island Tech University Debating Club in practice match " style="width:100%"/>
-            </div>
-            <div class="col-2">
-                <img src="Static/Images/football_club.png" alt="Island Tech University Football Team in match on field" style="width:100%"/>
-            </div>
-            <div class="col-2">
-                <img src="Static/Images/rowing_club.png" alt="Island Tech University Rowing Club rowing in School boats on river" style="width:100%"/>
-            </div>
-            <div class="col-2">
-                <img src="Static/Images/engineering_club.png" alt="Island Tech University Engineering Club students working on projects in Electrical and Electronics Lab" style="width:100%"/>
-            </div>
-
-        </div>
-    </div>
-
-    <div class=" home_section_6 container-fluid p-0 py-3 pb-5  overflow-hidden">
-        <div class=" text-center  m-0">
-            <h2 class="p-0 pb-2">
-                CONTACT US TODAY
-            </h2>
-
-            <div class="row  align-items-center justify-content-center" >
-                <div class="col-5 align-items-end ">
-                    <div class="input_field mb-3">
-                        <label for="nameInput" class="form-label">Name</label>
-                        <input type="text" class="form-control" id="nameInput" placeholder="Enter your name here">
-                    </div>
-
-                    <div class="input_field mb-3">
-                        <label for="emailInput" class="form-label ">Email address</label>
-                        <input type="email" class="form-control" id="emailInput" placeholder="name@example.com">
-
-                    </div>
-
-                    <div class="input_field mb-3">
-                        <label for="phoneInput" class="form-label">Contact Number</label>
-                        <input type="text" class="form-control" id="phoneInput" placeholder="Enter phone number (Please add country code).">
-                    </div>
-
-                    <div class="input_field ">
-                        <label for="inqurieTextArea"></label><textarea class="form-control" id="inqurieTextArea" rows="9" placeholder="Write your question here."></textarea>
-                    </div>
-
-                    <button class="learn_more_button mt-4 rounded-3 border border-0 px-2 py-1">Send</button>
-                </div>
-                <div class="col-6 text-center m-0 p-0 ">
-                    <img src="Static/Images/campus_walking.png" alt="Students at Island Tech University in casual attire walking on campus" style=" height:auto; width:70%;  object-fit: fill;">
-                </div>
-            </div>
-
-        </div>
-    </div>
-
-    <div class="footer_section container-fluid p-0 m-0  pt-5 px-4 shadow-lg overflow-hidden">
-        <div class="row justify-content-center ">
-            <div class="col-2 d-flex flex-column pt-3 ">
-                <img class="pe-3" src="Static/Images/logo-black.png" alt="Island Tech University Logo colored black" style="height:140px; width:130px"/>
-            </div>
-            <div class="col-3 d-flex flex-column pt-3 my-3 text-start border border-4 border-bottom-0 border-top-0 border-start-0">
-                <p>Island Tech University<br>27 Church Street<br>The Bottom<br>Caribbean Netherlands</p>
-                <p>Tele: 1(599)587-3424/ 1(599)677-3425</p>
-                <p>Email: admin@islandtech.com</p>
-            </div>
-            <div class="col-3 d-flex flex-column pt-3 my-3 text-center border border-4 border-bottom-0 border-top-0 border-start-0">
-                <h4>Information About</h4>
-                <a href="#!"><p class="footer_list_text">About ITU</p></a>
-                <a href="#!"><p class="footer_list_text">Programmes</p></a>
-                <a href="#!"><p class="footer_list_text">Campus Life</p></a>
-                <a href="#!"><p class="footer_list_text">Policies</p></a>
-                <a href="#!"><p class="footer_list_text">Site Map</p></a>
-
-            </div>
-            <div class="col-3 d-flex flex-column pt-3 my-3 text-center">
-                <h4>Contact Us</h4>
-                <a href="#!"><p class="footer_list_text">Media Center</p></a>
-                <a href="#!"><p class="footer_list_text">Contact Us</p></a>
-                <div class="pt-2 d-flex flex-row justify-content-center">
-                    <a class="pe-2" href="#!">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
-                            <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
-                        </svg>
-                    </a>
-
-                    <a class="pe-2" href="#!">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
-                            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
-                        </svg>
-                    </a>
-
-                    <a href="#!">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
-                            <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
-                        </svg>
-                    </a>
-                </div>
+        <div class="col-6 ">
+            <div class="row" style="height:15rem; overflow: hidden !important;">
 
             </div>
         </div>
     </div>
+</div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <script>
-        window.onscroll=function(){
-            const navbar = document.querySelector(".navbar")
-            const navbar_element = document.querySelector(".nav_element")
+<div class="home_section_2 container_fluid py-5 overflow-hidden">
+    <div class="row justify-content-center">
+        <div class="col-6 py-3">
+            <h3>Find your program</h3>
+            <p class="pt-3"> Search amoung our 100+ Internationally Accredited and Certified Programs across our 3 faculties.</p>
+        </div>
+    </div>
+    <div class="row justify-content-center mb-5">
+        <div class="col-6 ">
+            <div class="d-flex flex-row align-items-center mb-5">
+                <div class="form-check pe-4">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    <label class="form-check-label" for="flexRadioDefault1">
+                        Undergraduate Program
+                    </label>
+                </div>
+                <div class="form-check pe-4 ">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                    <label class="form-check-label" for="flexRadioDefault2">
+                        Graduate Program
+                    </label>
+                </div>
+                <div class="form-check pe-4">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3" checked>
+                    <label class="form-check-label" for="flexRadioDefault3">
+                        Short Courses
+                    </label>
+                </div>
+                <div class="form-check pe-4 ">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault4" checked>
+                    <label class="form-check-label" for="flexRadioDefault4">
+                        All
+                    </label>
+                </div>
 
 
-            let scroll_position = document.documentElement.scrollTop
+            </div>
 
-            console.log(document.getElementById("nav_element_5"))
+            <form class="d-flex flex-column" >
+                <input class="form-control me-2 rounded-1" type="search" placeholder="Search for your program of choice." aria-label="Search">
+
+            </form>
+            <button class="learn_more_button border border-0 rounded-3 px-3 py-1 mt-4" type="submit">Find Course</button>
 
 
-            if (scroll_position > 500){
+        </div>
 
-                navbar.style.background= "rgba(255,255,255,1)"
-                navbar_element.style.color= "rgb(0,0,0)"
-                document.getElementById("logo_image").src="Static/Images/logo-black.png"
-                document.getElementById("logo_image").alt="Island Tech University Logo colored black"
-                document.getElementById("nav_element_1").setAttribute('style', 'color: rgb(0,0,0) !important');
-                document.getElementById("nav_element_2").setAttribute('style', 'color: rgb(0,0,0) !important');
-                document.getElementById("nav_element_3").setAttribute('style', 'color: rgb(0,0,0) !important');
-                document.getElementById("nav_element_4").setAttribute('style', 'color: rgb(0,0,0) !important');
-                document.getElementById("nav_element_5").setAttribute('style', 'color: rgb(0,0,0) !important');
-                document.getElementById("nav_element_6").setAttribute('style', 'color: rgb(0,0,0) !important');
+    </div>
 
-            }
-            else{
-                navbar.style.background= "transparent"
-                navbar_element.style.color= "white"
-                document.getElementById("logo_image").src="Static/Images/logo-white.png"
-                document.getElementById("logo_image").alt="Island Tech University Logo colored white"
-                document.getElementById("nav_element_1").setAttribute('style', 'color: white !important');
-                document.getElementById("nav_element_2").setAttribute('style', 'color: white !important');
-                document.getElementById("nav_element_3").setAttribute('style', 'color: white !important');
-                document.getElementById("nav_element_4").setAttribute('style', 'color: white !important');
-                document.getElementById("nav_element_5").setAttribute('style', 'color: white !important');
-                document.getElementById("nav_element_6").setAttribute('style', 'color: white !important');
-            }
+    <div class="row text-center  pb-5 pt-5">
+        <h3>Our Accreditations \ Certifications</h3>
+    </div>
+    <div class="row align-items-center justify-content-center ">
+        <div class="col-3 text-center">
+            <a href="https://www.naab.org/home">
+                <img src="Static/Images/NAAB_Logo.png" alt="NAAB Logo" style=" width:auto; height:3rem; object-fit: fill"/>
+            </a>
+        </div>
+        <div class="col-3 text-center">
+            <a href="https://www.enaee.eu/">
+                <img src="Static/Images/ENAEE-logo.png" alt="ENAEE Logo"  style=" width:auto; height:4rem; object-fit: fill"/>
+            </a>
+        </div>
+        <div class="col-3 text-center">
+            <a href="https://www.nvao.net/en">
+                <img src="Static/Images/navo-logo.png" alt="NAVO Logo"  style=" width:auto; height:5rem; object-fit: fill"/>
+            </a>
+        </div>
+        <div class="col-3 text-center">
+            <a href="https://www.asic.org.uk/">
+                <img src="Static/Images/ASIC-Logo.jpg" alt="ASIC Logo"  style=" width:auto; height:7rem; object-fit: fill"/>
+            </a>
+        </div>
+
+    </div>
+</div>
+
+<div class="home_section_3 container_fluid py-5 overflow-hidden">
+    <div class="row justify-content-center">
+        <div class="news_card card border border-0 shadow-large rounded-0 mt-5 " style="max-width: 30rem; min-width: 18rem; ">
+
+            <img src="./Static/Images/grad_purifier_team.jpg" class="card-img-top rounded-0" alt="The Yellow Snake Tower">
+
+            <div class="card-body  text-start p-0 px-4 py-3">
+                <h3 class="card-title py-3 ">Student Highlight:</h3>
+                <h4> Innovations in Water Purification</h4>
+                <h6>January 3, 2025</h6>
+                <p class="card-text p-0">Graduate students from the Civil and Environmental Engineering Department have developed a cost-effective water purification system using locally sourced materials. Their prototype is currently being tested in underserved regions and has the potential to improve access to clean water globally.</p>
+                <a class="pt-1" href="#!"> Read more >></a>
+            </div>
+        </div>
+
+        <div class="news_card card border border-0 shadow-large rounded-0 mt-5 " style="max-width: 30rem; min-width: 18rem; ">
+
+            <img src="./Static/Images/alumini_feature_image.png" class="card-img-top rounded-0" alt="The Yellow Snake Tower">
+
+            <div class="card-body  text-start p-0 px-4 py-3">
+                <h3 class="card-title py-3 ">Alumni Achievements:</h3>
+                <h4>Building a Better Tomorrow</h4>
+                <h6>January 5, 2025</h6>
+                <p class="card-text p-0">Our alumni continue to leave a lasting impact on the world. From designing earthquake-resistant housing in Southeast Asia to leading urban renewal projects in major cities, ITU graduates are using their skills to address global challenges. This article profiles three outstanding alumni and their groundbreaking projects.</p>
+                <a class="pt-1" href="#!"> Read more >></a>
+            </div>
+        </div>
+
+        <div class="news_card card border border-0 shadow-large rounded-0 mt-5 " style="max-width: 30rem; min-width: 18rem; ">
+
+            <img src="./Static/Images/faculty_focus.png" class="card-img-top rounded-0" alt="The Yellow Snake Tower">
+
+            <div class="card-body  text-start p-0 px-4 py-3">
+                <h3 class="card-title py-3 ">Faculty Spotlight: </h3>
+                <h4>Dr. Maria Tan’s Work on Renewable Energy</h4>
+                <h6>December 18, 2024</h6>
+                <p class="card-text p-0">Dr. Maria Tan, a professor in our Electrical Engineering Department, has been making waves with her research on advanced solar panel technologies. Her recent paper, published in Renewable Energy Journal, explores innovative methods to improve efficiency and durability in extreme climates. Dr. Tan’s work exemplifies our commitment to sustainability and innovation.</p>
+                <a class="pt-1" href="#!"> Read more >></a>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="home_section_4 container_fluid shadow-lg py-5 overflow-hidden">
+    <div class="row justify-content-center">
+        <div class="col-7 p-5 pt-0">
+            <h3 class="mb-5"> PRESIDENTIAL GREETINGS</h3>
+            <p>
+                Welcome to a vibrant hub of innovation, exploration, and growth. At Island Tech University, we are committed to empowering students, faculty, and staff to achieve their highest potential while fostering a culture of collaboration, inclusion, and sustainability.
+            </p>
+            <p>
+                Our institution stands at the forefront of cutting-edge research and transformative education. With a focus on global challenges and local impact, we prepare our students to be leaders and changemakers in an ever-evolving world.
+            </p>
+            <p>
+                Whether you are here to pursue academic excellence, engage in groundbreaking research, or contribute to our diverse and dynamic community, know that you are an integral part of a legacy dedicated to shaping the future.
+            </p>
+            <p>
+                Thank you for being a part of Island Tech University, where opportunity meets possibility.
+            </p>
+            <p>
+                Warm regards,<br>
+                Dr. Kevin Jackson <br>
+                President, Island Tech University
+            </p>
+        </div>
+        <div class="col-5 py-3 text-start ">
+            <img src="./Static/Images/president_photo.png" style="width:40rem"/>
+        </div>
+    </div>
+</div>
+
+<div class="home_section_5 container_fluid p-0  overflow-hidden text-center">
+    <div class="row text-center justify-content-center">
+        <div class="col-8 mb-4">
+            <h2 class="my-4">CAMPUS ENERGY</h2>
+            <img src="./Static/Images/logo-black.png" class="py-3" style="height:auto; width:12rem"/>
+            <p>At Island Tech University, we believe that learning goes beyond the classroom. Our vibrant campus is home to a diverse range of clubs and activities designed to foster creativity, leadership, and community spirit. Whether you're passionate about sports, arts, technology, or social causes, there's a place for everyone to thrive.</p>
+            <p>Our student clubs, such as the Engineering Club, Debate Society, Music Club, and Netball and Soccer Clubs, provide opportunities to connect with like-minded peers while developing valuable skills. From building innovative projects in state-of-the-art labs to engaging in spirited debates or performing on stage, students are encouraged to explore their interests and talents.</p>
+        </div>
+
+    </div>
+    <div class="row text-center" >
+        <div class="col-12 text-center mb-5 ">
+
+            <button class="learn_more_button border border-0 rounded-3 px-3 py-1">Discover More</button>
+        </div>
+    </div>
+    <div class="row justify-content-center g-0  " style="height:15rem">
+        <div class="col-2">
+            <img src="./Static/Images/netball_club.png" style="width:100%"/>
+        </div>
+        <div class="col-2">
+            <img src="./Static/Images/music_club.png" style="width:100%"/>
+        </div>
+        <div class="col-2">
+            <img src="./Static/Images/debate_society.png" style="width:100%"/>
+        </div>
+        <div class="col-2">
+            <img src="./Static/Images/football_club.png" style="width:100%"/>
+        </div>
+        <div class="col-2">
+            <img src="./Static/Images/rowing_club.png" style="width:100%"/>
+        </div>
+        <div class="col-2">
+            <img src="./Static/Images/engineering_club.png" style="width:100%"/>
+        </div>
+
+    </div>
+</div>
+
+<div class=" home_section_6 container-fluid p-0 py-3 pb-5  overflow-hidden">
+    <div class=" text-center  m-0">
+        <h2 class="p-0 pb-2">
+            CONTACT US TODAY
+        </h2>
+
+        <div class="row  align-items-start justify-content-center text-start" >
+            <div class="col-5 align-items-end ">
+                <div class="input_field mb-3">
+                    <label for="nameInput" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="nameInput" placeholder="Enter your name here">
+                </div>
+
+                <div class="input_field mb-3">
+                    <label for="emailInput" class="form-label ">Email address</label>
+                    <input type="email" class="form-control" id="emailInput" placeholder="name@example.com">
+
+                </div>
+
+                <div class="input_field mb-3">
+                    <label for="phoneInput" class="form-label">Contact Number</label>
+                    <input type="text" class="form-control" id="phoneInput" placeholder="Enter phone number (Please add country code).">
+                </div>
+
+
+                <div class="input_field mb-3">
+                    <label for="studentCategory" class="form-label ">Select Category</label>
+                    <select id="studentCategory" class="form-control form-select py-4"  onchange="subjectList('academic_area')">
+                        <option value="0">-- Select related Category --</option>
+                        <option value="1">Undergraduate</option>
+                        <option value="2">Graduate</option>
+                        <option value="3">Alumini</option>
+                        <option value="4">Other</option>
+                    </select>
+                </div>
+
+                <div class="input_field mb-3">
+                    <label for="topicInput" class="form-label">Topic</label>
+                    <input type="text" class="form-control" id="topicInput" placeholder="Subject">
+                </div>
+
+                <div class="input_field ">
+                    <textarea class="form-control" id="inqurieTextArea" rows="9" placeholder="Write your question here."></textarea>
+                </div>
+
+                <button class="learn_more_button mt-4 rounded-3 border border-0 px-2 py-1">Send</button>
+            </div>
+            <div class="col-6 text-center m-0 p-0 ">
+                <img src="./Static/Images/campus_walking.png" style=" height:auto; width:70%;  object-fit: fill;">
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="footer_section container-fluid p-0 m-0  pt-5 px-4 shadow-lg overflow-hidden">
+    <div class="row justify-content-center ">
+        <div class="col-2 d-flex flex-column pt-3 ">
+            <img class="pe-3" src="./Static/Images/logo-black.png" style="height:140px; width:130px"/>
+        </div>
+        <div class="col-3 d-flex flex-column pt-3 my-3 text-start border border-4 border-bottom-0 border-top-0 border-start-0">
+            <p>Island Tech University<br>27 Church Street<br>The Bottom<br>Caribbean Netherlands</p>
+            <p>Tele: 1(845)587-3424 / 1(845)677-3425</p>
+            <p>Email: admin@islandtech.com</p>
+        </div>
+        <div class="col-3 d-flex flex-column pt-3 my-3 text-center border border-4 border-bottom-0 border-top-0 border-start-0">
+            <h4>Information About</h4>
+            <a href="#!"><p class="footer_list_text">About ITU</p></a>
+            <a href="#!"><p class="footer_list_text">Programmes</p></a>
+            <a href="#!"><p class="footer_list_text">Campus Life</p></a>
+            <a href="#!"><p class="footer_list_text">Policies</p></a>
+            <a href="#!"><p class="footer_list_text">Site Map</p></a>
+
+        </div>
+        <div class="col-3 d-flex flex-column pt-3 my-3 text-center">
+            <h4>Contact Us</h4>
+            <a href="#!"><p class="footer_list_text">Media Center</p></a>
+            <a href="#!"><p class="footer_list_text">Contact Us</p></a>
+            <div class="pt-2 d-flex flex-row justify-content-center">
+                <a class="pe-2" href="#!">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                        <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+                    </svg>
+                </a>
+
+                <a class="pe-2" href="#!">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                        <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+                    </svg>
+                </a>
+
+                <a href="#!">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
+                        <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
+                    </svg>
+                </a>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script>
+
+    window.onscroll=function(){
+        const navbar = document.querySelector(".navbar")
+        const navbar_element = document.querySelector(".nav_element")
+
+
+        let scroll_position = document.documentElement.scrollTop
+
+        console.log(document.getElementById("nav_element_5"))
+
+
+        if (scroll_position > 400){
+
+            navbar.style.background= "rgba(255,255,255,1)"
+            navbar_element.style.color= "rgb(0,0,0)"
+            document.getElementById("logo_image").src="./Static/Images/logo-black.png"
+            document.getElementById("nav_element_1").setAttribute('style', 'color: rgb(0,0,0) !important');
+            document.getElementById("nav_element_2").setAttribute('style', 'color: rgb(0,0,0) !important');
+            document.getElementById("nav_element_3").setAttribute('style', 'color: rgb(0,0,0) !important');
+            document.getElementById("nav_element_4").setAttribute('style', 'color: rgb(0,0,0) !important');
+            document.getElementById("nav_element_5").setAttribute('style', 'color: rgb(0,0,0) !important');
+            document.getElementById("nav_element_6").setAttribute('style', 'color: rgb(0,0,0) !important');
+
         }
+        else{
+            navbar.style.background= "transparent"
+            navbar_element.style.color= "white"
+            document.getElementById("logo_image").src="./Static/Images/logo-white.png"
+            document.getElementById("nav_element_1").setAttribute('style', 'color: white !important');
+            document.getElementById("nav_element_2").setAttribute('style', 'color: white !important');
+            document.getElementById("nav_element_3").setAttribute('style', 'color: white !important');
+            document.getElementById("nav_element_4").setAttribute('style', 'color: white !important');
+            document.getElementById("nav_element_5").setAttribute('style', 'color: white !important');
+            document.getElementById("nav_element_6").setAttribute('style', 'color: white !important');
+        }
+    }
 
 
-    </script>
+</script>
 </body>
 </html>

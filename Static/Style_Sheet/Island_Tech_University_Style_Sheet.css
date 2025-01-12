@@ -15,6 +15,21 @@ body{
 }
 
 
+.dropdown:hover .dropdown-menu {
+    display:block !important;
+    border-radius: 0 !important;
+    border: none !important;
+}
+
+.donate_button{
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px !important;
+    font-weight: 400 !important;
+    background-color: #FDB216;
+    border: none !important;
+}
+
+
 .section_1, .section_4, .intro_card{
     background-color: #1D3453;
 }
@@ -351,7 +366,6 @@ body{
     font-size: clamp(30px, 3vw,55px ) !important;
 }
 
-
 .home_section_1 p{
     font-family: 'Karla', sans-serif;
     font-size: clamp(15px, 3vw,20px ) !important;
@@ -360,6 +374,7 @@ body{
 
 .home_section_2{
     background-color:#1D3453;
+    border: #FDB216 solid 40px;
 }
 
 .form-check-label{
@@ -379,7 +394,7 @@ body{
 .home_section_2 h3{
     color: #FDB216 !important;
     font-family: 'Oswald', sans-serif;
-    font-size: 50px !important;
+    font-size: 40px !important;
     font-weight: 500 !important;
 }
 
@@ -428,6 +443,14 @@ body{
     font-weight: 500 !important;
 }
 
+
+.home_section_7 h3{
+    color:#FDB216 !important;
+    font-family: 'Oswald', sans-serif;
+    font-size: 40px !important;
+    font-weight: 500 !important;
+}
+
 /*Contact Us*/
 .contact_us_section_1 h2{
     color: #000000 !important;
@@ -461,6 +484,21 @@ body{
     font-weight: 600 !important;
 }
 
+/*Modal*/
+.modal-content label{
+    color: white !important;
+}
+
+.modal-header h1 {
+    color: white !important;
+}
+
+.modal-header button{
+    background-color: white !important;
+}
+
+
+
 @media screen and (max-width: 1199px) {
     .nav-link{
         border-left: white solid 8px !important;
@@ -469,6 +507,7 @@ body{
     }
 
 }
+
 
 
 
