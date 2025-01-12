@@ -1,0 +1,467 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Oswald:wght@200..700&display=swap');
+
+body{
+    overflow-y:scroll;
+}
+
+.navbar #nav_element_1, #nav_element_2,#nav_element_3, #nav_element_4, #nav_element_5, #nav_element_6{
+    font-family: 'Karla', sans-serif !important;
+    font-weight: 700 !important;
+    text-decoration: none !important;
+    text-shadow: none !important;
+    color: white !important;
+}
+
+
+.section_1, .section_4, .intro_card{
+    background-color: #1D3453;
+}
+
+.section_1 p{
+    color: white !important;
+    font-family: 'Karla', sans-serif !important;
+}
+
+.section_2{
+    background-image:url(../Images/students_walking_on_campus.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 30rem;
+}
+
+.section_2 h2{
+    color: #FDB216 !important;
+    font-family: 'Oswald', sans-serif;
+    font-size: 40px !important;
+}
+
+.section_2 p{
+    color: white !important;
+    font-family: 'Karla', sans-serif;
+    font-size: 23px !important;
+}
+
+.section_3 h2, .academic_section_2 h2{
+    color: darkred !important;
+    font-family: 'Oswald', sans-serif;
+    font-size: 40px !important;
+}
+
+.section_3 p, .academic_section_2 p{
+    color: black !important;
+    font-family: 'Karla', sans-serif;
+    font-size: 28px !important;
+    font-weight: 700 !important;
+}
+
+.section_4 h2{
+    color: #FDB216 !important;
+    font-family: 'Oswald', sans-serif;
+    font-size: 40px !important;
+}
+
+.section_4 p{
+    color: white !important;
+    font-family: 'Karla', sans-serif;
+    font-size: 23px !important;
+}
+
+.learn_more_button{
+    font-family: 'Oswald', sans-serif;
+    font-size: 28px !important;
+    font-weight: 500 !important;
+    background-color: #FDB216;
+}
+
+/*Academic Page*/
+.academic_section_1{
+    background-color: #1D3453;
+}
+
+.academic_section_1 h2{
+    color: #FDB216 !important;
+    font-family: 'Oswald', sans-serif;
+    font-size: 40px !important;
+}
+
+.card-img-overlay{
+    background-color: rgba(0, 0, 0, 0.5) !important;
+}
+
+.card-img-overlay h3{
+    color: white !important;
+}
+
+.academic_cards p{
+    color: white !important;
+    font-family: 'Karla', sans-serif;
+    font-size: 20px !important;
+    line-height: 3rem !important;
+}
+
+.academic_section_3{
+    background-image: url(../Images/Island_Tech_Lab_2_tinted.png);
+    height:100%;
+    width:100%;
+    background-size: cover;
+    background-repeat: no-repeat!important;
+}
+
+.academic_section_3 h2{
+    color: #FDB216 !important;
+    font-family: 'Oswald', sans-serif;
+    font-size: 40px !important;
+    opacity: 100% !important;
+}
+
+.academic_section_3 p{
+    color: #FDB216 !important;
+    font-family: 'Oswald', sans-serif;
+    font-size: 26px !important;
+    opacity: 100% !important;
+}
+
+.finance_dreams_cards{
+    background-color: transparent !important;
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px !important;
+    color: white;
+}
+
+.finance_paragraph p{
+    color: white !important;
+    font-family: 'Karla', sans-serif;
+    font-size: 20px !important;
+    line-height: 3rem !important;
+
+}
+
+#it_subjects, #eng_subjects, #arch_subjects, #course_subjects, #action_text{
+    display: none;
+}
+
+#it_card_text{
+    display:none;
+}
+
+#eng_card_text{
+    display:none;
+}
+
+#arch_card_text{
+    display:none;
+}
+
+#academic_area, #it_subjects, #eng_subjects, #arch_subjects, #course_subjects{
+    font-family: 'Karla', sans-serif;
+    font-size: 20px !important;
+    font-weight: 700 !important;
+    text-align: center;
+}
+
+/*Campus Life*/
+
+.campus_life_intro_image{
+    background-image: url(../Images/match_day_supporters_sq.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+
+.campus_life_intro_text p{
+    font-family: 'Karla', sans-serif;
+    font-size: clamp(18px, 4%, 25px) !important;
+    font-weight: 500 !important;
+}
+
+.dorm_card, .card-body{
+    background-color: transparent !important;
+    font-family: 'Karla', sans-serif !important;
+    font-size: clamp(18px, 4%, 25px) !important;
+    font-weight: 500 !important;
+}
+
+.dorm_card .card-body h3{
+    color: #FDB216 !important;
+    font-family: 'Oswald', sans-serif;
+
+    font-weight: 500 !important;
+}
+
+.option_card{
+    border-bottom: #777777 3px solid;
+}
+
+.option_card .card-body h3{
+    color: black !important;
+    font-family: 'Oswald', sans-serif;
+
+    font-weight: 500 !important;
+}
+
+.campus_life_section_5 .card{
+    background-color:#1D3453;
+}
+
+.campus_life_section_5 h3{
+    color: #FDB216 !important;
+    font-family: 'Oswald', sans-serif;
+
+    font-weight: 500 !important;
+    font-size: 35px !important;
+}
+
+.campus_life_section_5 p{
+    color: white !important;
+    font-family: 'Karla', sans-serif;
+
+    font-weight: 500 !important;
+    font-size: 25px !important;
+}
+
+.campus_life_section_5 a{
+    text-decoration: none !important;
+    color: #FDB216 !important;
+    font-family: 'Karla', sans-serif;
+    font-weight: 500 !important;
+    font-size: 18px !important;
+}
+
+/*News Letter*/
+.news_letter_section_1, .nav-item a{
+    text-decoration: none !important;
+    color: #000000 !important;
+    font-family: 'Karla', sans-serif;
+    font-weight: 500 !important;
+    font-size: 18px !important;
+
+}
+
+.news_letter_section_2 h3{
+    color: #FDB216 !important;
+    font-family: 'Oswald', sans-serif;
+
+    font-weight: 500 !important;
+    font-size: 60px !important;
+
+}
+
+.news_letter_section_2, .news_letter_section_3  p, a{
+    text-decoration: none !important;
+    color: #ffffff !important;
+    font-family: 'Karla', sans-serif;
+    font-weight: 500 !important;
+    font-size: 20px !important;
+}
+
+.news_letter_section_3 h3{
+    font-family: 'Oswald', sans-serif;
+
+    font-weight: 500 !important;
+    font-size: 25px !important;
+
+}
+
+.news_letter_section_2 img{
+
+    width: 30rem !important;
+    object-fit: fill !important;
+}
+
+.news_card{
+    border-bottom: #777777 3px solid;
+}
+
+.news_letter_section_3, .news_letter_section_4  h2{
+    color: black !important;
+    font-family: 'Oswald', sans-serif;
+
+    font-weight: 500 !important;
+}
+
+.news_card .card-body p{
+    color: black !important;
+    font-family: 'Karla', sans-serif;
+
+    font-weight: 500 !important;
+}
+
+.news_card .card-body a{
+    text-decoration: none !important;
+    color: black !important;
+    font-family: 'Karla', sans-serif;
+    font-size: 15px !important;
+    font-weight: 500 !important;
+}
+
+.news_side_bar{
+    border-left: #333333 solid 4px;
+    overflow: scroll !important;
+    height: 50em !important;
+}
+
+.news_side_bar h4{
+    color: white !important;
+    font-family: 'Karla', sans-serif;
+
+    font-weight: 500 !important;
+}
+
+.news_side_bar h6{
+    color: #FDB216 !important;
+    font-family: 'Karla', sans-serif;
+
+    font-weight: 500 !important;
+}
+
+.news_side_bar::-webkit-scrollbar {
+    display: none;
+}
+
+.news_letter_section_4 {
+    background-color:#1D3453;
+}
+
+.news_letter_section_4 h2{
+    color: #FDB216 !important;
+    font-family: 'Oswald', sans-serif;
+    font-size: 50px !important;
+    font-weight: 500 !important;
+
+}
+
+.slide_1 h3{
+    font-size: clamp(25px, 2.5vw,45px ) !important;
+}
+
+.slide_2 h3{
+    font-size: clamp(25px, 2.5vw,45px ) !important;
+}
+
+.slide_3 h3{
+    font-size: clamp(25px, 2.5vw,45px ) !important;
+}
+
+/*HOME PAGE*/
+.home_section_1 h1{
+    font-family: 'Oswald', sans-serif;
+    font-size: clamp(30px, 3vw,55px ) !important;
+}
+
+.home_section_1 p{
+    font-family: 'Karla', sans-serif;
+    font-size: clamp(15px, 3vw,20px ) !important;
+    font-weight: 500 !important;
+}
+
+.home_section_2{
+    background-color:#1D3453;
+}
+
+.form-check-label{
+    color: white !important;
+    font-family: 'Karla', sans-serif;
+    font-size: 20px;
+    font-weight: 500 !important;
+}
+
+.home_section_2 p{
+    color: white !important;
+    font-family: 'Karla', sans-serif;
+    font-size: 20px;
+    font-weight: 500 !important;
+}
+
+.home_section_2 h3{
+    color: #FDB216 !important;
+    font-family: 'Oswald', sans-serif;
+    font-size: 50px !important;
+    font-weight: 500 !important;
+}
+
+.home_section_4 h3{
+    color: #FDB216 !important;
+    font-family: 'Oswald', sans-serif;
+    font-size: 50px !important;
+    font-weight: 500 !important;
+}
+
+.home_section_4{
+    background-color:#1D3453;
+    color: white !important;
+    font-family: 'Karla', sans-serif;
+    font-size: 20px;
+    font-weight: 500 !important;
+
+}
+
+.home_section_5 h2{
+    color: #000000 !important;
+    font-family: 'Oswald', sans-serif;
+    font-size: 50px !important;
+    font-weight: 500 !important;
+}
+
+.home_section_5 p{
+    color: #000000 !important;
+    font-family: 'Karla', sans-serif;
+    font-size: 25px;
+
+    font-weight: 500 !important;
+}
+
+.home_section_6 h2{
+    color: #000000 !important;
+    font-family: 'Oswald', sans-serif;
+    font-size: 50px !important;
+    font-weight: 500 !important;
+}
+
+.home_section_6 .input_field{
+    color: #000000 !important;
+    font-family: 'Karla', sans-serif;
+    font-size: 20px;
+    font-weight: 500 !important;
+}
+
+/*Contact Us*/
+.contact_us_section_1 h2{
+    color: #000000 !important;
+    font-family: 'Oswald', sans-serif;
+    font-size: 50px !important;
+    font-weight: 500 !important;
+
+}
+
+.contact_us_section_1 p, label{
+    color: #000000 !important;
+    font-family: 'Karla', sans-serif;
+    font-size: 20px;
+    font-weight: 500 !important;
+}
+
+
+/*Footer*/
+.footer_section p {
+    color: #000000 !important;
+    font-family: 'Karla', sans-serif;
+    font-size: 15px;
+    font-weight: 600 !important;
+}
+
+.footer_section a {
+    color: #000000 !important;
+    text-decoration: none !important;
+    font-family: 'Karla', sans-serif;
+    font-size: 5px;
+    font-weight: 600 !important;
+}
+
+
+
+
+
+
