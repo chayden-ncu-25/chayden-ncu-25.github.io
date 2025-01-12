@@ -25,7 +25,7 @@ body{
     font-family: 'Oswald', sans-serif;
     font-size: 18px !important;
     font-weight: 400 !important;
-    background-color: #FDB216;
+    background-color: #FDB216 !important;
     border: none !important;
 }
 
@@ -374,7 +374,7 @@ body{
 
 .home_section_2{
     background-color:#1D3453;
-    border: #FDB216 solid 40px;
+    border: #FDB216 solid 40px !important;
 }
 
 .form-check-label{
