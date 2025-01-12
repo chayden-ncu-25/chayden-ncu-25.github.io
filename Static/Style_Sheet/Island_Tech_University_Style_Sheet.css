@@ -346,10 +346,11 @@ body{
 }
 
 /*HOME PAGE*/
-.home_section_1 h1{
+.home_section_1, h1 h2{
     font-family: 'Oswald', sans-serif;
     font-size: clamp(30px, 3vw,55px ) !important;
 }
+
 
 .home_section_1 p{
     font-family: 'Karla', sans-serif;
